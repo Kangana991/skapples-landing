@@ -9,7 +9,8 @@
 <body>
   <header class="navbar">
     <div class="logo">🐾 Skapples</div>
-    <nav>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Posts</a></li>
@@ -46,5 +47,13 @@
       <p>Ensure you pay bills, file taxes, and invest on time—so you avoid late fees, missed opportunities, and financial stress.</p>
     </div>
   </section>
+  <script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
