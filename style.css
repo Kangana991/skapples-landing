@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #045d56;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text h1 {
+  font-size: 48px;
+  color: #045d56;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: #444;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 15px;
+  border-radius: 6px;
+}
+
+.btn.green {
+  background-color: #045d56;
+  color: #fff;
+}
+
+.btn.outline {
+  border: 2px solid #045d56;
+  color: #045d56;
+}
+
+.image img {
+  max-width: 300px;
+}
+
+.features {
+  display: flex;
+  gap: 50px;
+  padding: 40px 80px;
+  background-color: #f3fefb;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+}
+
+.feature h3 {
+  color: #045d56;
+}
