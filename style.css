@@ -39,7 +39,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 80px;
+  padding: 6vw 8vw;
+  gap: clamp(16px, 4vw, 48px);
   flex-wrap: wrap;
 }
 
@@ -49,7 +50,7 @@ body {
 }
 
 .text h1 {
-  font-size: 48px;
+  font-size: clamp(28px, 6vw, 48px);
   color: #045d56;
 }
 
