@@ -31,8 +31,16 @@
         <a href="#" class="btn outline">JOIN THE WAITLIST</a>
       </div>
     </div>
-    <div class="image">
-      <img src="assets/puppy.png" alt="Skapples Puppy" />
+      <div class="puppy-container">
+      <img src="assets/puppy.png" alt="Skapples Puppy" class="puppy-image"/>
+      <div class="coin-animation">
+        <lottie-player
+        src="assets/coin.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+    ></lottie-player>
     </div>
   </main>
 
@@ -54,5 +62,6 @@
     navLinks.classList.toggle('active');
   });
 </script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

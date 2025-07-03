@@ -87,12 +87,28 @@ body {
   color: #045d56;
 }
 
-.image img {
-  width: clamp(160px, 30vw, 300px); /* scales with screen size */
-  height: auto; /* maintains aspect ratio */
-  max-width: 100%; /* never overflow container */
+.puppy-container {
+  position: relative; /* anchor for the coin */
+  display: inline-block;
+  width: clamp(160px, 30vw, 300px); /* same width as puppy image */
+}
+
+.puppy-container img {
+  width: 100%;
+  height: auto;
   display: block;
 }
+
+.coin-animation {
+  position: absolute;
+  top: clamp(54%, 5vw, 74%); /* 🧪 tweak as needed */
+  left: clamp(32%, 5vw, 53%); /* 🧪 tweak as needed */
+  width: clamp(120px, 4vw, 320px); /* responsive coin size */
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
 
 .features {
   display: flex;
