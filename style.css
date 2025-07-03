@@ -55,9 +55,11 @@ body {
 }
 
 .text p {
-  font-size: 16px;
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 400;
   line-height: 1.6;
-  margin-top: 20px;
+  margin-top: clamp(12px, 2vw, 32px);
+  max-width: clamp(300px, 60vw, 700px);
   color: #444;
 }
 
