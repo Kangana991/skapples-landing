@@ -21,7 +21,7 @@ body {
   color: #045d56;
 }
 
-nav ul {
+.nav-links ul {
   list-style: none;
   display: flex;
   gap: 30px;
@@ -29,7 +29,7 @@ nav ul {
   padding: 0;
 }
 
-nav a {
+.nav-links a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -145,13 +145,13 @@ nav a {
     display: flex;
   }
 
-  .nav ul {
+  .nav-links ul {
     flex-direction: column;
     gap: 15px;
     padding: 20px 0;
   }
 
-  .nav a {
+  .nav-links a {
     padding: 10px 20px;
   }
 }
