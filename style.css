@@ -94,19 +94,24 @@ body {
 
 .features {
   display: flex;
-  gap: 50px;
-  padding: 40px 80px;
+  gap: clamp(20px, 5vw, 60px);
+  padding: clamp(30px, 6vw, 80px) clamp(20px, 5vw, 60px);
   background-color: #f3fefb;
   flex-wrap: wrap;
 }
 
 .feature {
-  flex: 1;
+  flex: 1 1 clamp(250px, 45%, 400px); /* adaptive width */;
   min-width: 250px;
 }
 
 .feature h3 {
+  font-size: clamp(18px, 3vw, 24px);
   color: #045d56;
+}
+.feature p {
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.6;
 }
 /* Hamburger button styles */
 .menu-toggle {
