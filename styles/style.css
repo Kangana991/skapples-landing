@@ -375,3 +375,33 @@ body {
     font-weight: 500;
     color: #333;
 }
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .puppy-and-coin {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .puppy-image {
+    max-width: 180px;
+    height: auto;
+  }
+
+  .text {
+    width: 90%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
