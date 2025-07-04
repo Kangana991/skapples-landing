@@ -47,20 +47,24 @@ body {
 .text {
   flex: 1;
   min-width: 300px;
+  text-align: center;
+  margin: 0 auto; 
 }
 
 .text h1 {
   font-size: clamp(28px, 6vw, 48px);
   color: #045d56;
+  text-align: center;
 }
 
 .text p {
   font-size: clamp(16px, 1.8vw, 22px);
   font-weight: 400;
   line-height: 1.6;
-  margin-top: clamp(12px, 2vw, 32px);
-  max-width: clamp(300px, 60vw, 700px);
+  margin-top: clamp(8px, 2vw, 16px);
+  max-width: clamp(500px, 60vw, 900px);
   color: #444;
+  text-align: center;
 }
 
 .buttons {
