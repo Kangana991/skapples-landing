@@ -223,6 +223,46 @@ body {
   display: block;
   margin: 0 auto;
 }
+.testimonials {
+  background-color: #fefdf7;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  color: #257e6a;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #257e6a;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.testimonial-card .icon {
+  width: 24px;
+  height: 24px;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
 
 
 /* Hamburger button styles */
