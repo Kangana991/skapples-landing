@@ -177,6 +177,53 @@ body {
   display: block;
   margin: 0 auto;
 }
+.reminder-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vw 8vw;
+  gap: clamp(16px, 4vw, 48px);
+  flex-wrap: wrap;
+  background-color: #fefdf7;
+}
+
+.reminder-section .text {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.reminder-section .text h1 {
+  font-size: clamp(28px, 6vw, 48px);
+  color: #045d56;
+  text-align: center;
+}
+
+.reminder-section .text p {
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: clamp(8px, 2vw, 16px);
+  max-width: clamp(300px, 60vw, 700px);
+  color: #444;
+  text-align: center;
+}
+
+
+.phone-visual {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-visual img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* Hamburger button styles */
 .menu-toggle {
