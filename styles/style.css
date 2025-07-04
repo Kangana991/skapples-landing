@@ -263,6 +263,43 @@ body {
   margin-top: 10px;
 }
 
+.contact-section {
+  padding: 60px 20px;
+  background-color: #fdfaf5;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.contact-text {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  color: #045d56;
+  margin-bottom: 20px;
+}
+
+.contact-text a {
+  color: #045d56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-image img {
+  max-width: 280px;
+  height: auto;
+}
 
 
 /* Hamburger button styles */
