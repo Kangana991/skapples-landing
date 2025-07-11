@@ -1,0 +1,481 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdf9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #045d56;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vw 8vw;
+  gap: clamp(16px, 4vw, 48px);
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.text h1 {
+  font-size: clamp(28px, 6vw, 48px);
+  color: #045d56;
+  text-align: center;
+}
+
+.text p {
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: clamp(8px, 2vw, 16px);
+  max-width: clamp(500px, 60vw, 900px);
+  color: #444;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: clamp(10px, 2vw, 16px) clamp(16px, 4vw, 32px);
+  font-size: clamp(14px, 2vw, 18px);
+  text-decoration: none;
+  margin-right: clamp(8px, 2vw, 20px);
+  border-radius: clamp(4px, 1vw, 10px);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn.green {
+  background-color: #045d56;
+  color: #fff;
+}
+
+.btn.outline {
+  border: 2px solid #045d56;
+  color: #045d56;
+}
+
+.puppy-container {
+  position: relative; /* anchor for the coin */
+  display: inline-block;
+  width: clamp(160px, 30vw, 300px); /* same width as puppy image */
+}
+
+.puppy-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coin-animation {
+  position: absolute;
+  top: clamp(54%, 5vw, 74%); /* 🧪 tweak as needed */
+  left: clamp(32%, 5vw, 53%); /* 🧪 tweak as needed */
+  width: clamp(120px, 4vw, 320px); /* responsive coin size */
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+
+.features {
+  display: flex;
+  gap: clamp(20px, 5vw, 60px);
+  padding: clamp(30px, 6vw, 80px) clamp(20px, 5vw, 60px);
+  background-color: #f3fefb;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1 1 clamp(250px, 45%, 400px); /* adaptive width */;
+  min-width: 250px;
+}
+
+.feature h3 {
+  font-size: clamp(18px, 3vw, 24px);
+  color: #045d56;
+}
+.feature p {
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.6;
+}
+.insights-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vw 8vw;
+  flex-wrap: wrap;
+  gap: clamp(24px, 4vw, 64px);
+}
+
+.insights-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.insights-text h2 {
+  font-size: clamp(28px, 6vw, 48px);
+  color: #045d56;
+  text-align: center;
+}
+
+.insights-text p {
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: clamp(8px, 2vw, 16px);
+  max-width: clamp(500px, 60vw, 900px);
+  color: #444;
+  text-align: center;
+}
+
+.insights-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.insights-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.reminder-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vw 8vw;
+  gap: clamp(16px, 4vw, 48px);
+  flex-wrap: wrap;
+  background-color: #fefdf7;
+}
+
+.reminder-section .text {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.reminder-section .text h1 {
+  font-size: clamp(28px, 6vw, 48px);
+  color: #045d56;
+  text-align: center;
+}
+
+.reminder-section .text p {
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: clamp(8px, 2vw, 16px);
+  max-width: clamp(300px, 60vw, 700px);
+  color: #444;
+  text-align: center;
+}
+
+
+.phone-visual {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-visual img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.testimonials {
+  background-color: #fefdf7;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  color: #257e6a;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #257e6a;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.testimonial-card .icon {
+  width: 24px;
+  height: 24px;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #fdfaf5;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.contact-text {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  color: #045d56;
+  margin-bottom: 20px;
+}
+
+.contact-text a {
+  color: #045d56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-image img {
+  max-width: 280px;
+  height: auto;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #045d56;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  background-color: #045d56;
+  color: white;
+  padding: 12px;
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #033c3a;
+}
+
+.close-button {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
+
+/* Hamburger button styles */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .coin-animation {
+    top: 55%;
+    left: 33%;
+    width: 60px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #045d56;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Below navbar */
+    right: 0;  /* Align to the right */
+    width: 100%;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+  }
+}
+
+.nav-links li {
+    padding: 12px 20px;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+.nav-links a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .puppy-and-coin {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .puppy-image {
+    max-width: 180px;
+    height: auto;
+  }
+
+  .text {
+    width: 90%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livo – Finance, simplified</title>
+  <!-- Standard favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/Images/favicon.png" />
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/Images/favicon.png" />
+
+<!-- Android Chrome -->
+<link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="logo">🐾 Livo</div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#insights-section">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="hero-section" class="hero-section">
+    <div class="text">
+      <h1>Save over 30% of </br>Your Wealth</br> Stress Free</h1>
+      <p>Livo is the most fun and efficient finance app ever made. </br> Effortlessly track your expenses and receive reminders for tax filings and payments.</p>
+      <div class="buttons">
+        <a href="#" class="btn green" onclick="openModal()">GET EARLY ACCESS</a>
+      </div>
+    </div>
+
+      <div class="puppy-container">
+      <img src="assets/Images/puppy.png" alt="Skapples Puppy" class="puppy-image"/>
+      <div class="coin-animation">
+        <lottie-player
+        src="assets/Animations/coin.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+    ></lottie-player>
+    </div>
+   </div>
+  </main>
+  <div id="waitlistModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <h2>Get Early Access</h2>
+    <form id="waitlistForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+  <section id="insights-section" class="insights-section">
+  <div class="insights-text">
+    <h2>Stay in charge of your money</h2>
+    <p>Identify important expenses & todos with a single click. Sweep away the rest.</p>
+  </div>
+  <div class="insights-image">
+    <img src="assets/Images/piechart-phone.png" alt="Expense Analysis Phone Screen" />
+  </div>
+</section>
+
+
+  <section class="reminder-section">
+  <div class="text">
+    <h1>Never miss a<br>payment again</h1>
+    <p>We remind you about all things money: to pay taxes, do stock gain harvesting, pay bills etc.</p>
+  </div>
+  <div class="phone-visual">
+    <img src="assets/Images/payment-reminder-phone.png" alt="Payment Reminder Phone Screen" />
+  </div>
+</section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🔒 Secure</h3>
+      <p>100% safe: We never read OTPs or private messages, and all your data stays securely on your phone—nothing is ever sent to our servers.</p>
+    </div>
+    <div class="feature">
+      <h3>📅 Smart Reminders</h3>
+      <p>Ensure you pay bills, file taxes, and invest on time—so you avoid late fees, missed opportunities, and financial stress.</p>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+  <h2>Livo Wall of Love</h2>
+  <div class="testimonial-grid">
+
+    <div class="testimonial-card">
+      <p>Livo, Thanks for showing the ultimate focus and love in your product 👏👏 Every product could use a bit of that!<br><strong>-Preey Shah</strong></p>
+      <img src="assets/Icons/linkedin.png" alt="LinkedIn" class="icon" />
+    </div>
+
+    <div class="testimonial-card">
+      <p>As a user, I switched to Livo for tracking my finances and it's a whole new world...literally life-changing. When I go to my "old" finance excel sheet and see the chaos there, it explains a lot about why people’s finances are in havoc...it's not us, it's the tools. It's my sincere hope that the tools will evolve to help users find what they want.
+<br><strong>-Kalash Pandiya</strong></p>
+      <img src="assets/Icons/linkedin.png" alt="LinkedIn" class="icon" />
+    </div>
+
+    <div class="testimonial-card">
+      <p>Just love how Livo greets me with a beautiful screen as soon as I login. BTW, if you have no idea where your money is going and always feel tense about what reminder you’ve forgotten, just try Livo once. It's the cutest finance app I have ever seen. Since I started using it, I believe my expense tracking time has gone down by about 60–70%. <br><strong>-Rucha Sharma</strong></p>
+      <img src="assets/Icons/linkedin.png" alt="LinkedIn" class="icon" />
+    </div>
+
+    <div class="testimonial-card">
+      <p>What do you like best about Livo? It's easy to review my spends and to get reminders for paying my taxes or to come back to my ITR in the future, allowing me to prioritize my work and focus on only the things I need to address right now. Livo has saved me a bunch of money!<br><strong>-Gargi Upadhyay</strong></p>
+      <img src="assets/Icons/x.jpg" alt="X (Twitter)" class="icon" />
+    </div>
+
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-text">
+      <h2>Contact us</h2>
+      <p>We’d love to hear from you!<br>
+         Please write to us at<br>
+         <a href="mailto:info@livo.com">info@livo.com</a><br>
+      </p>
+    </div>
+    <div class="puppy-container">
+  <img src="assets/Images/puppy.png" alt="Skapples Puppy" class="puppy-image"/>
+  <div class="coin-animation">
+    <lottie-player
+      src="assets/Animations/coin.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay
+    ></lottie-player>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
